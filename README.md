@@ -1,6 +1,8 @@
 # pokemon-battle-system
 Pokemon battle system for game design practice using only HTML, CSS, and JavaScript (Ongoing project)
 
+This is forked from https://github.com/DeusMalsith/pokemon-battle-system. I have turned this into an educational game to teach about OP_CAT on Bitcoin.
+
 How to play
 -------------------
 
