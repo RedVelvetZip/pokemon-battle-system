@@ -35,7 +35,7 @@ function transition() {
 //Starts the game with the player as the Taproot Wizard battling against Mew/OP_CAT
 //Pokemon max of six for enemy and player
 function initGame() {
-	playerParty.push(pokemon[1]);
+	playerParty.push(pokemon[2]);
 	enemyParty.push(pokemon[0]);
 	playerPokemon = playerParty[0];
 	console.log(playerPokemon);

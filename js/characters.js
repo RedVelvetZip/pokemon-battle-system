@@ -72,6 +72,7 @@ pokemon = [];
 // pokemon.push(new Pokemon('HAUNTER', 50, 120, [moves['lick'], moves['psychic']], './assets/img/haunter.png', './assets/img/haunterback.png'));
 // pokemon.push(new Pokemon('MACHAMP', 50, 190, [moves['low sweep'], moves['dynamic punch']], './assets/img/machamp.png', './assets/img/machampback.png'));
 pokemon.push(new Pokemon('OP_CAT', 99, 117, [moves['inquisition'], moves['maxi laser eyes']], './assets/img/mew07.png', './assets/img/mew07.png'));
+pokemon.push(new Pokemon('OP_CTV', 99, 117, [moves['inquisition'], moves['maxi laser eyes']], './assets/img/mew07.png', './assets/img/mew07.png'));
 pokemon.push(new Pokemon('WIZARD', 2, 2, [moves['inquisition'], moves['maxi laser eyes']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
 pokemon.push(new Pokemon('WIZARD', 4, 4, [moves['inquisition'], moves['maxi laser eyes']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
 pokemon.push(new Pokemon('WIZARD', 8, 8, [moves['inquisition'], moves['maxi laser eyes']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
