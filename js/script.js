@@ -32,19 +32,11 @@ function transition() {
 	}, 3800)
 }
 
-//Starts the game and sets the beginning pokemon at random
+//Starts the game with the player as the Taproot Wizard battling against Mew/OP_CAT
 //Pokemon max of six for enemy and player
 function initGame() {
-	// for (var i = 0; i < 6; i++) {
-	// 	var tempPokemon = pokemon.splice(Math.floor(Math.random() * pokemon.length), 1)[0];
-	// 	tempPokemon.owner = 'player';
-	// 	playerParty.push(tempPokemon);
-	// 	tempPokemon = pokemon.splice(Math.floor(Math.random() * pokemon.length), 1)[0];
-	// 	tempPokemon.owner = 'enemy';
-	// 	enemyParty.push(tempPokemon);
-	// }
-	playerParty.push(pokemon[0]);
-	enemyParty.push(pokemon[1]);
+	playerParty.push(pokemon[1]);
+	enemyParty.push(pokemon[0]);
 	playerPokemon = playerParty[0];
 	console.log(playerPokemon);
 	enemyPokemon = enemyParty[0];

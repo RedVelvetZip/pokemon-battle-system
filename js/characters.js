@@ -71,8 +71,14 @@ pokemon = [];
 // pokemon.push(new Pokemon('HITMONLEE', 50, 138, [moves['hi jump kick'], moves['mega kick']], './assets/img/hitmonlee.png', './assets/img/hitmonleeback.png'));
 // pokemon.push(new Pokemon('HAUNTER', 50, 120, [moves['lick'], moves['psychic']], './assets/img/haunter.png', './assets/img/haunterback.png'));
 // pokemon.push(new Pokemon('MACHAMP', 50, 190, [moves['low sweep'], moves['dynamic punch']], './assets/img/machamp.png', './assets/img/machampback.png'));
-pokemon.push(new Pokemon('WIZARD', 50, 190, [moves['inquisition'], moves['maxi laser eyes']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
-pokemon.push(new Pokemon('OP_CAT', 50, 190, [moves['inquisition'], moves['maxi laser eyes']], './assets/img/mew07.png', './assets/img/mew07.png'));
+pokemon.push(new Pokemon('OP_CAT', 99, 190, [moves['inquisition'], moves['maxi laser eyes']], './assets/img/mew07.png', './assets/img/mew07.png'));
+pokemon.push(new Pokemon('WIZARD', 2, 7, [moves['inquisition'], moves['maxi laser eyes']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
+pokemon.push(new Pokemon('WIZARD', 4, 67, [moves['inquisition'], moves['maxi laser eyes']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
+pokemon.push(new Pokemon('WIZARD', 8, 190, [moves['inquisition'], moves['maxi laser eyes']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
+pokemon.push(new Pokemon('WIZARD', 16, 190, [moves['inquisition'], moves['maxi laser eyes']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
+pokemon.push(new Pokemon('WIZARD', 32, 190, [moves['inquisition'], moves['maxi laser eyes']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
+pokemon.push(new Pokemon('WIZARD', 64, 190, [moves['inquisition'], moves['maxi laser eyes']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
+pokemon.push(new Pokemon('WIZARD', 128, 190, [moves['inquisition'], moves['maxi laser eyes']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
 
 
 let playerParty = [];
