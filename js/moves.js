@@ -113,5 +113,15 @@ let moves = {
 		name: 'DYNAMIC PUNCH',
 		damage: 50,
 		target: 'enemy'
+	},
+	'inquisition': {
+		name: 'INQUISITION',
+		damage: 50,
+		target: 'enemy'
+	},
+	'maxi laser eyes': {
+		name: 'MAXI LASER EYES',
+		damage: 0,
+		target: 'enemy'
 	}
 };
