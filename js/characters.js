@@ -59,27 +59,15 @@ class Pokemon {
 };
 
 pokemon = [];
-// pokemon.push(new Pokemon('PIKACHU', 50, 117, [moves['tackle'], moves['thundershock']], './assets/img/pikachu.png', './assets/img/pikachuback.png'));
-// pokemon.push(new Pokemon('CHARIZARD', 50, 163, [moves['fire blast'], moves['mega punch']], './assets/img/charizard.png', './assets/img/charizardback.png'));
-// pokemon.push(new Pokemon('BLASTOISE', 50, 180, [moves['hydro pump'], moves['skull bash']], './assets/img/blastoise.png', './assets/img/blastoiseback.png'));
-// pokemon.push(new Pokemon('KADABRA', 50, 128, [moves['psychic'], moves['rest']], './assets/img/kadabra.png', './assets/img/kadabraback.png'));
-// pokemon.push(new Pokemon('VENUSAUR', 50, 171, [moves['solar beam'], moves['body slam']], './assets/img/venusaur.png', './assets/img/venusaurback.png'));
-// pokemon.push(new Pokemon('JOLTEON', 50, 152, [moves['quick attack'], moves['thunder']], './assets/img/jolteon.png', './assets/img/jolteonback.png'));
-// pokemon.push(new Pokemon('ARBOK', 50, 133, [moves['acid'], moves['belch']], './assets/img/arbok.png', './assets/img/arbokback.png'));
-// pokemon.push(new Pokemon('SCYTHER', 50, 155, [moves['slash'], moves['hyper beam']], './assets/img/scyther.png', './assets/img/scytherback.png'));
-// pokemon.push(new Pokemon('STARMIE', 50, 146, [moves['hydro pump'], moves['rest']], './assets/img/starmie.png', './assets/img/starmieback.png'));
-// pokemon.push(new Pokemon('HITMONLEE', 50, 138, [moves['hi jump kick'], moves['mega kick']], './assets/img/hitmonlee.png', './assets/img/hitmonleeback.png'));
-// pokemon.push(new Pokemon('HAUNTER', 50, 120, [moves['lick'], moves['psychic']], './assets/img/haunter.png', './assets/img/haunterback.png'));
-// pokemon.push(new Pokemon('MACHAMP', 50, 190, [moves['low sweep'], moves['dynamic punch']], './assets/img/machamp.png', './assets/img/machampback.png'));
 pokemon.push(new Pokemon('OP_CAT', 99, 117, [moves['inquisition'], moves['maxi laser eyes']], './assets/img/mew07.png', './assets/img/mew07.png'));
 pokemon.push(new Pokemon('OP_CTV', 99, 117, [moves['inquisition'], moves['maxi laser eyes']], './assets/img/mew07.png', './assets/img/mew07.png'));
-pokemon.push(new Pokemon('WIZARD', 2, 2, [moves['inquisition'], moves['maxi laser eyes']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
-pokemon.push(new Pokemon('WIZARD', 4, 4, [moves['inquisition'], moves['maxi laser eyes']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
-pokemon.push(new Pokemon('WIZARD', 8, 8, [moves['inquisition'], moves['maxi laser eyes']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
-pokemon.push(new Pokemon('WIZARD', 16, 18, [moves['inquisition'], moves['maxi laser eyes']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
-pokemon.push(new Pokemon('WIZARD', 32, 38, [moves['inquisition'], moves['maxi laser eyes']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
-pokemon.push(new Pokemon('WIZARD', 64, 76, [moves['inquisition'], moves['maxi laser eyes']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
-pokemon.push(new Pokemon('WIZARD', 128, 156, [moves['inquisition'], moves['maxi laser eyes']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
+pokemon.push(new Pokemon('WIZARD', 2, 20, [moves['choice 1'], moves['choice 2'], moves['choice 3'], moves['choice 4']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
+pokemon.push(new Pokemon('WIZARD', 4, 40, [moves['choice 1'], moves['choice 2'], moves['choice 3'], moves['choice 4']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
+pokemon.push(new Pokemon('WIZARD', 8, 60, [moves['choice 1'], moves['choice 2'], moves['choice 3'], moves['choice 4']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
+pokemon.push(new Pokemon('WIZARD', 16, 80, [moves['choice 1'], moves['choice 2'], moves['choice 3'], moves['choice 4']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
+pokemon.push(new Pokemon('WIZARD', 32, 100, [moves['choice 1'], moves['choice 2'], moves['choice 3'], moves['choice 4']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
+pokemon.push(new Pokemon('WIZARD', 64, 120, [moves['choice 1'], moves['choice 2'], moves['choice 3'], moves['choice 4']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
+pokemon.push(new Pokemon('WIZARD', 128, 256, [moves['choice 1'], moves['choice 2'], moves['choice 3'], moves['choice 4']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
 
 
 let playerParty = [];
