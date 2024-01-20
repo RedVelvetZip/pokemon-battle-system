@@ -31,10 +31,8 @@ class Pokemon {
 		target.decrementHealth(move.damage);
 		}
 	}
-	useItem(target, item) {
-		if (item.target == 'self') {
-			this.decrementHealth(this.maxhealth * item.damage);
-		}
+	wrongAnswer(target, move) {
+		
 	}
 	// Faint function will pull the next pokemon in the array into the battle
 	faint(currentPokemon, party) {
@@ -59,12 +57,15 @@ class Pokemon {
 };
 
 pokemon = [];
-pokemon.push(new Pokemon('OP_CAT', 99, 117, [moves['inquisition'], moves['maxi laser eyes']], './assets/img/mew07.png', './assets/img/mew07.png'));
-pokemon.push(new Pokemon('OP_CTV', 99, 117, [moves['inquisition'], moves['maxi laser eyes']], './assets/img/mew07.png', './assets/img/mew07.png'));
-pokemon.push(new Pokemon('WIZARD', 2, 20, [moves['choice 1'], moves['choice 2'], moves['choice 3'], moves['choice 4']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
-pokemon.push(new Pokemon('WIZARD', 4, 40, [moves['choice 1'], moves['choice 2'], moves['choice 3'], moves['choice 4']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
-pokemon.push(new Pokemon('WIZARD', 8, 60, [moves['choice 1'], moves['choice 2'], moves['choice 3'], moves['choice 4']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
-pokemon.push(new Pokemon('WIZARD', 16, 80, [moves['choice 1'], moves['choice 2'], moves['choice 3'], moves['choice 4']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
+
+pokemon.push(new Pokemon('OP_CAT', 99, 117, [moves['correct'], moves['false']], './assets/img/mew07.png', './assets/img/mew07.png'));
+
+pokemon.push(new Pokemon('OP_CTV', 99, 117, [moves['correct'], moves['false']], './assets/img/templeape01.png', './assets/img/templeape01.png'));
+
+pokemon.push(new Pokemon('WIZARD', 2, 100, [moves['choice 1'], moves['choice 2'], moves['choice 3'], moves['choice 4']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
+pokemon.push(new Pokemon('WIZARD', 4, 100, [moves['choice 1'], moves['choice 2'], moves['choice 3'], moves['choice 4']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
+pokemon.push(new Pokemon('WIZARD', 8, 100, [moves['choice 1'], moves['choice 2'], moves['choice 3'], moves['choice 4']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
+pokemon.push(new Pokemon('WIZARD', 16, 100, [moves['choice 1'], moves['choice 2'], moves['choice 3'], moves['choice 4']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
 pokemon.push(new Pokemon('WIZARD', 32, 100, [moves['choice 1'], moves['choice 2'], moves['choice 3'], moves['choice 4']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
 pokemon.push(new Pokemon('WIZARD', 64, 120, [moves['choice 1'], moves['choice 2'], moves['choice 3'], moves['choice 4']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
 pokemon.push(new Pokemon('WIZARD', 128, 256, [moves['choice 1'], moves['choice 2'], moves['choice 3'], moves['choice 4']], './assets/img/wizard02.png', './assets/img/wizard02.png'));

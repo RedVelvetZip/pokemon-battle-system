@@ -1,19 +1,17 @@
 let moves = {
-	'rest': {
-		name: 'REST',
-		damage: -.6,
+	//moves for opcode critters
+	'false': {
+		name: 'false',
+		damage: 35,
+		target: 'enemy'
+	},
+	'correct': {
+		name: 'correct',
+		damage: -0,
 		target: 'self'
 	},
-	'inquisition': {
-		name: 'INQUISITION',
-		damage: 50,
-		target: 'enemy'
-	},
-	'maxi laser eyes': {
-		name: 'MAXI LASER EYES',
-		damage: 0,
-		target: 'enemy'
-	},
+
+	//answer choices for wizards
 	'choice 1': {
 		name: 'CHOICE 1',
 		damage: 0,
