@@ -49,7 +49,7 @@ class Pokemon {
 				}
 			}
 			if (foundPokemon == false) {
-				endGame();
+				endGameWin();
 			}
 			return currentPokemon;
 		}
@@ -80,7 +80,7 @@ class Pokemon {
 pokemon = [];
 
 pokemon.push(new Pokemon('OP_CAT', 99, 93, [moves['Q1'], moves['Q2'], moves['Q3'], moves['Q4'], moves['Q5'], moves['Q6'], moves['Q7'], moves['Q8'], moves['Q9'], moves['Q10'], moves['correct'], moves['false']], './assets/img/mew07.png', './assets/img/mew07.png'));
-pokemon.push(new Pokemon('WIZARD', 50, 100, 
+pokemon.push(new Pokemon('QUIZ', 50, 100, 
 [
 	moves['Q1A1'], moves['Q1A2'], moves['Q1A3'], moves['Q1A4'],
 	moves['Q2A1'], moves['Q2A2'], moves['Q2A3'], moves['Q2A4'],

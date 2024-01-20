@@ -205,8 +205,7 @@ function removeListeners() {
 function endGame() {
 	document.getElementById('ending').src = './assets/img/pkmnvictory.png';
 	document.getElementById('ending').style.zIndex = '1';
-	document.getElementById('endingtext1').src = 'testttttt';
-	document.getElementById('endingtext1').style.zIndex = '1';
+	document.getElementById('endingtext').style.zIndex = '1';
 	battlesfx.pause();
 	victorysfx.play();
 }
@@ -214,7 +213,7 @@ function endGame() {
 function endGameWin() {
 	document.getElementById('ending').src = './assets/img/pkmnvictory2.png';
 	document.getElementById('ending').style.zIndex = '1';
-	document.getElementById('endingtext2').style.zIndex = '1';
+	document.getElementById('winnertext').style.zIndex = '1';
 	battlesfx.pause();
 	victorysfx.play();
 }
