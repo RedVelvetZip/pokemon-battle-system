@@ -245,7 +245,7 @@ button:focus {
 	left: 25px;
 	height: 260px;
 	text-align: left;
-	z-index: 1;
+	z-index: -1;
 	display: flex;
     flex-direction: column;
     justify-content: flex-start; 
@@ -265,7 +265,7 @@ button:focus {
 	left: 275px;
 	height: 260px;
 	text-align: left;
-	z-index: 1;
+	z-index: -1;
 	display: flex;
     flex-direction: column;
     justify-content: flex-start; 
