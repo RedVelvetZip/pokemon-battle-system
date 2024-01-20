@@ -82,7 +82,7 @@ function showPokemon(){
 // }
 
 function fightButton() {
-	document.getElementById('b2').src = "./assets/img/pkmnbattle2.png";//TODO QQ goes over this
+	document.getElementById('b2').src = "./assets/img/pkmnbattle2.png";
 	document.getElementById('attackcancel').style.zIndex = '1';
 	document.getElementById('attack1').style.zIndex = '1';
 	document.getElementById('attack2').style.zIndex = '1';
@@ -102,7 +102,7 @@ function cancelButton() {
 }
 
 function attack1() {
-	playerPokemon.attack(enemyPokemon, playerPokemon.moves[0]);
+	// playerPokemon.attack(enemyPokemon, playerPokemon.moves[0]);
 	document.getElementById('attackcancel').style.zIndex = '-1';
 	document.getElementById('attack1').style.zIndex = '-1';
 	document.getElementById('attack2').style.zIndex = '-1';
@@ -113,11 +113,12 @@ function attack1() {
 		setTimeout(function() {
 			document.getElementById('pkmn').style.animation = '';
 		}, 1000);
+		playerPokemon.attack(enemyPokemon, playerPokemon.moves[44]);
 		questionCounter++;
-		playerPokemon.faint(playerPokemon, playerParty);
+		// playerPokemon.faint(playerPokemon, playerParty);
 	}
 	else {
-		enemyPokemon.attack(playerPokemon,enemyPokemon.moves[1]);//hardcoded to 1 bc that's where 'false' is rn
+		enemyPokemon.attack(playerPokemon,enemyPokemon.moves[11]);//hardcoded to 1 bc that's where 'false' is rn
 		playerPokemon.loser(playerPokemon, playerParty);
 		document.getElementById('pkmnback').style.animation = 'blink 0.15s 5';
 		setTimeout(function() {
@@ -135,7 +136,7 @@ function attack1() {
 }
 
 function attack2() {
-	playerPokemon.attack(enemyPokemon, playerPokemon.moves[1]);
+	// playerPokemon.attack(enemyPokemon, playerPokemon.moves[1]);
 	document.getElementById('attackcancel').style.zIndex = '-1';
 	document.getElementById('attack1').style.zIndex = '-1';
 	document.getElementById('attack2').style.zIndex = '-1';
@@ -146,11 +147,12 @@ function attack2() {
 		setTimeout(function() {
 			document.getElementById('pkmn').style.animation = '';
 		}, 1000);
+		playerPokemon.attack(enemyPokemon, playerPokemon.moves[44]);
 		questionCounter++;
-		playerPokemon.faint(playerPokemon, playerParty);
+		// playerPokemon.faint(playerPokemon, playerParty);
 	}
 	else {
-		enemyPokemon.attack(playerPokemon,enemyPokemon.moves[1]);//hardcoded to 1 bc that's where 'false' is rn
+		enemyPokemon.attack(playerPokemon,enemyPokemon.moves[11]);//hardcoded to 1 bc that's where 'false' is rn
 		playerPokemon.loser(playerPokemon, playerParty);
 		document.getElementById('pkmnback').style.animation = 'blink 0.15s 5';
 		setTimeout(function() {
@@ -203,7 +205,16 @@ function removeListeners() {
 function endGame() {
 	document.getElementById('ending').src = './assets/img/pkmnvictory.png';
 	document.getElementById('ending').style.zIndex = '1';
-	document.getElementById('endingtext').style.zIndex = '1';
+	document.getElementById('endingtext1').src = 'testttttt';
+	document.getElementById('endingtext1').style.zIndex = '1';
+	battlesfx.pause();
+	victorysfx.play();
+}
+
+function endGameWin() {
+	document.getElementById('ending').src = './assets/img/pkmnvictory2.png';
+	document.getElementById('ending').style.zIndex = '1';
+	document.getElementById('endingtext2').style.zIndex = '1';
 	battlesfx.pause();
 	victorysfx.play();
 }

@@ -202,7 +202,21 @@ button:focus {
 	position: absolute;
 }
 
-#endingtext {
+#endingtext1 {
+	position: absolute;
+	font-family: 'pokemon-font', monospace;
+	font-size: 25px;
+	color: #282d00;
+	background: transparent;
+	border: none !important;
+	width: 500px;
+	top: 352px;
+	left: 25px;
+	text-align: left;
+	line-height: 50px;
+	z-index: -1;
+}
+#endingtext2 {
 	position: absolute;
 	font-family: 'pokemon-font', monospace;
 	font-size: 25px;

@@ -55,27 +55,6 @@ class Pokemon {
 		}
 	}
 
-	// cycle(currentPokemon, party) {
-	// 	var foundPokemon = false;
-	// 	var tempHealth = this.health;
-	// 	// if (this.health <= 0) {
-	// 	console.log('fainted!');
-	// 	this.alive = false;
-	// 	for (var i = 0; i < party.length; i++) {
-	// 		if (party[i].alive == true) {
-	// 			foundPokemon = true;
-	// 			currentPokemon = party[i];
-	// 			currentPokemon.health = tempHealth;//added
-	// 			break;
-	// 		}
-	// 	}
-	// 	// if (foundPokemon == false) {
-	// 	// 	endGame();
-	// 	// }
-	// 	return currentPokemon;
-	// 	// }
-	// }
-
 	loser(currentPokemon, party) {
 		// var foundPokemon = false;
 		// var tempHealth = this.health;
@@ -100,7 +79,7 @@ class Pokemon {
 
 pokemon = [];
 
-pokemon.push(new Pokemon('OP_CAT', 99, 93, [moves['correct'], moves['false'], moves['Q1'], moves['Q2'], moves['Q3'], moves['Q4'], moves['Q5'], moves['Q6'], moves['Q7'], moves['Q8'], moves['Q9'], moves['Q10'],], './assets/img/mew07.png', './assets/img/mew07.png'));
+pokemon.push(new Pokemon('OP_CAT', 99, 93, [moves['Q1'], moves['Q2'], moves['Q3'], moves['Q4'], moves['Q5'], moves['Q6'], moves['Q7'], moves['Q8'], moves['Q9'], moves['Q10'], moves['correct'], moves['false']], './assets/img/mew07.png', './assets/img/mew07.png'));
 pokemon.push(new Pokemon('WIZARD', 50, 100, 
 [
 	moves['Q1A1'], moves['Q1A2'], moves['Q1A3'], moves['Q1A4'],
@@ -113,6 +92,8 @@ pokemon.push(new Pokemon('WIZARD', 50, 100,
 	moves['Q8A1'], moves['Q8A2'], moves['Q8A3'], moves['Q8A4'],
 	moves['Q9A1'], moves['Q9A2'], moves['Q9A3'], moves['Q9A4'],
 	moves['Q10A1'], moves['Q10A2'], moves['Q10A3'], moves['Q10A4'],
+	moves['Q11A1'], moves['Q11A2'], moves['Q11A3'], moves['Q11A4'],
+	moves['answer_true']
 ], 
 './assets/img/wizard02.png', './assets/img/wizard02.png'));
 

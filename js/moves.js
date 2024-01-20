@@ -11,31 +11,9 @@ let moves = {
 		target: 'self'
 	},
 
-	//answer choices for wizards
-	'choice 1': {
-		name: 'CHOICE 1',
-		damage: 0,
-		target: 'enemy'
-	},
-	'choice 2': {
-		name: 'CHOICE 2',
-		damage: 0,
-		target: 'enemy'
-	},
-	'choice 3': {
-		name: 'CHOICE 3',
-		damage: 0,
-		target: 'enemy'
-	},
-	'choice 4': {
-		name: 'CHOICE 4',
-		damage: 0,
-		target: 'enemy'
-	},
-
 	//QUESTIONS
 	'Q1': {
-		name: 'Who invented OP_CAT??',
+		name: 'Who invented OP_CAT?',
 		damage: 0,
 		target: 'self'
 	},
@@ -45,17 +23,17 @@ let moves = {
 		target: 'self'
 	},
 	'Q3': {
-		name: 'What it dooooo question 3',
+		name: 'Question 3',
 		damage: 0,
 		target: 'self'
 	},
 	'Q4': {
-		name: 'Q4?',
+		name: 'Question 4',
 		damage: 0,
 		target: 'self'
 	},
 	'Q5': {
-		name: 'Q5?',
+		name: 'Question 5',
 		damage: 0,
 		target: 'self'
 	},
@@ -84,6 +62,14 @@ let moves = {
 		damage: 0,
 		target: 'self'
 	},
+
+	//damage from wizard TODO set damage
+	'answer_true': {
+		name: 'answer_true',
+		damage: 10,
+		target: 'enemy'
+	},	
+
 
 	//ANSWERS
 	'Q1A1': {
@@ -291,6 +277,27 @@ let moves = {
 		target: 'false'
 	},
 	'Q10A4': {
+		name: 's4',
+		damage: 0,
+		target: 'false'
+	},
+
+	'Q11A1': {
+		name: 'Q11a1-final',
+		damage: 0,
+		target: 'false'
+	},
+	'Q11A2': {
+		name: 'FINAL',
+		damage: 10,
+		target: 'true'
+	},
+	'Q11A3': {
+		name: 's3',
+		damage: 0,
+		target: 'false'
+	},
+	'Q11A4': {
 		name: 's4',
 		damage: 0,
 		target: 'false'
