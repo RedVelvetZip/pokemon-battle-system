@@ -5,6 +5,8 @@ let victorysfx = new Audio('./assets/sfx/pokemonvictory.mp3');
 let playerPokemon;
 let enemyPokemon;
 
+let questionCounter = 0;
+
 addListeners();
 
 function startButton() {
@@ -33,9 +35,8 @@ function transition() {
 }
 
 //Starts the game with the player as the Taproot Wizard battling against Mew/OP_CAT
-//Pokemon max of six for enemy and player
 function initGame() {
-	playerParty.push(pokemon[2]);
+	playerParty.push(pokemon[1]);
 	enemyParty.push(pokemon[0]);
 	playerPokemon = playerParty[0];
 	console.log(playerPokemon);
@@ -54,7 +55,7 @@ function showPokemon(){
 	document.getElementById('pkmnback-hp').textContent = playerPokemon.health;
 	document.getElementById('attack1').textContent = playerPokemon.moves[0].name;
 	document.getElementById('attack2').textContent = playerPokemon.moves[1].name;
-	document.getElementById('question').textContent = playerPokemon.moves[1].name;
+	document.getElementById('question').textContent = enemyPokemon.moves[questionCounter].name
 
 	// This animates the health bar when attacked
 	var percentage = playerPokemon.health / playerPokemon.maxhealth;
@@ -63,12 +64,11 @@ function showPokemon(){
 	document.getElementById('enemy-hp-bar').style.width = ((161 * percentage) + "px");
 }
 
-function switchPokemon() {
-	console.log('switched pokemon');
-}
+// function switchPokemon() {
+// 	console.log('switched pokemon');
+// }
 
 // function itemButton() {
-
 // }
 
 function fightButton() {
@@ -80,7 +80,6 @@ function fightButton() {
 }
 
 // function pkmnButton() {
-
 // }
 
 function cancelButton() {
@@ -99,11 +98,12 @@ function attack1() {
 	document.getElementById('attack2').style.zIndex = '-1';
 	document.getElementById('question').style.zIndex = '-1';
 	document.getElementById('b2').src = "";
-	if (playerPokemon.moves[0].target != 'self') {
+	if (playerPokemon.moves[0].target == 'true') {
 		document.getElementById('pkmn').style.animation = 'blink 0.15s 5';
 		setTimeout(function() {
 			document.getElementById('pkmn').style.animation = '';
 		}, 1000);
+		questionCounter++;
 	}
 	enemyPokemon.faint(enemyPokemon, enemyParty);
 	removeListeners();
@@ -122,11 +122,12 @@ function attack2() {
 	document.getElementById('attack2').style.zIndex = '-1';
 	document.getElementById('question').style.zIndex = '-1';
 	document.getElementById('b2').src = "";
-	if (playerPokemon.moves[1].target != 'self') {
+	if (playerPokemon.moves[1].target == 'true') {
 		document.getElementById('pkmn').style.animation = 'blink 0.15s 5';
 		setTimeout(function() {
 			document.getElementById('pkmn').style.animation = '';
 		}, 1000);
+		questionCounter++;
 	}
 	console.log(enemyPokemon.health);
 	enemyPokemon.faint(enemyPokemon, enemyParty);
@@ -140,7 +141,9 @@ function attack2() {
 
 function enemyAttack() {
 	var attackMove = Math.floor(Math.random() * enemyPokemon.moves.length);
-	console.log('attacked with',enemyPokemon.moves[attackMove].name);
+	//Only inflict damage if the answer is wrong
+	// var attackMove = if 
+	// console.log('attacked with',enemyPokemon.moves[attackMove].name);
 	enemyPokemon.attack(playerPokemon,enemyPokemon.moves[attackMove]);
 	if (enemyPokemon.moves[attackMove].target != 'self') {
 		document.getElementById('pkmnback').style.animation = 'blink 0.15s 5';

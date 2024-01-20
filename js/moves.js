@@ -31,5 +31,43 @@ let moves = {
 		name: 'CHOICE 4',
 		damage: 0,
 		target: 'enemy'
-	}
+	},
+
+	//questions
+	'Q1': {
+		name: 'Who invented OP_CAT??',
+		damage: 0,
+		target: 'self'
+	},
+	'Q2': {
+		name: 'What does concatenate mean?',
+		damage: 0,
+		target: 'self'
+	},
+	'Q3': {
+		name: 'What it dooooo question 3',
+		damage: 0,
+		target: 'self'
+	},
+
+	'Q1A1': {
+		name: 'Satoshi',
+		damage: 10,
+		target: 'true'
+	},
+	'Q1A2': {
+		name: 'someone2',
+		damage: 0,
+		target: 'false'
+	},
+	'Q1A3': {
+		name: 'someone3',
+		damage: 0,
+		target: 'false'
+	},
+	'Q1A4': {
+		name: 'someone4',
+		damage: 0,
+		target: 'false'
+	},
 };

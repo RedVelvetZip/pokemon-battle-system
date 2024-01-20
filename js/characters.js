@@ -58,11 +58,12 @@ class Pokemon {
 
 pokemon = [];
 
-pokemon.push(new Pokemon('OP_CAT', 99, 117, [moves['correct'], moves['false']], './assets/img/mew07.png', './assets/img/mew07.png'));
+// pokemon.push(new Pokemon('OP_CAT', 99, 117, [moves['correct'], moves['false'], moves['Q1']], './assets/img/mew07.png', './assets/img/mew07.png'));
+pokemon.push(new Pokemon('OP_CAT', 99, 117, [moves['Q1'], moves['Q2'], moves['Q3']], './assets/img/mew07.png', './assets/img/mew07.png'));
 
-pokemon.push(new Pokemon('OP_CTV', 99, 117, [moves['correct'], moves['false']], './assets/img/templeape01.png', './assets/img/templeape01.png'));
+// pokemon.push(new Pokemon('OP_CTV', 99, 117, [moves['correct'], moves['false']], './assets/img/templeape01.png', './assets/img/templeape01.png'));
 
-pokemon.push(new Pokemon('WIZARD', 2, 100, [moves['choice 1'], moves['choice 2'], moves['choice 3'], moves['choice 4']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
+pokemon.push(new Pokemon('WIZARD', 2, 100, [moves['Q1A1'], moves['Q1A2'], moves['Q1A3'], moves['Q1A4']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
 pokemon.push(new Pokemon('WIZARD', 4, 100, [moves['choice 1'], moves['choice 2'], moves['choice 3'], moves['choice 4']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
 pokemon.push(new Pokemon('WIZARD', 8, 100, [moves['choice 1'], moves['choice 2'], moves['choice 3'], moves['choice 4']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
 pokemon.push(new Pokemon('WIZARD', 16, 100, [moves['choice 1'], moves['choice 2'], moves['choice 3'], moves['choice 4']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
