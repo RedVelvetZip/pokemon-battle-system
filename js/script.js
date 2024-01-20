@@ -36,7 +36,7 @@ function transition() {
 
 //Starts the game with the player as the Taproot Wizard battling against Mew/OP_CAT
 function initGame() {
-	playerParty.push(pokemon[1]);
+	playerParty.push(pokemon[1],pokemon[2],pokemon[3],pokemon[4],pokemon[5]);
 	enemyParty.push(pokemon[0]);
 	playerPokemon = playerParty[0];
 	console.log(playerPokemon);
@@ -46,6 +46,7 @@ function initGame() {
 }
 
 function showPokemon(){
+	current = questionCounter;
 	console.log(enemyPokemon);
 	document.getElementById('pkmnback').src = playerPokemon.imgback;
 	document.getElementById('pkmn').src = enemyPokemon.imgfront;
@@ -104,6 +105,7 @@ function attack1() {
 			document.getElementById('pkmn').style.animation = '';
 		}, 1000);
 		questionCounter++;
+		playerPokemon.faint(playerPokemon, playerParty);
 	}
 	enemyPokemon.faint(enemyPokemon, enemyParty);
 	removeListeners();
@@ -128,6 +130,7 @@ function attack2() {
 			document.getElementById('pkmn').style.animation = '';
 		}, 1000);
 		questionCounter++;
+		playerPokemon.faint(playerPokemon, playerParty);
 	}
 	console.log(enemyPokemon.health);
 	enemyPokemon.faint(enemyPokemon, enemyParty);
