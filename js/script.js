@@ -132,6 +132,13 @@ function attack2() {
 		questionCounter++;
 		playerPokemon.faint(playerPokemon, playerParty);
 	}
+	else {
+		enemyPokemon.attack(playerPokemon,enemyPokemon.moves[6]);
+		document.getElementById('pkmnback').style.animation = 'blink 0.15s 5';
+		setTimeout(function() {
+			document.getElementById('pkmnback').style.animation = '';
+		}, 1000);
+	}
 	console.log(enemyPokemon.health);
 	enemyPokemon.faint(enemyPokemon, enemyParty);
 	removeListeners();

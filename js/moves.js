@@ -2,7 +2,7 @@ let moves = {
 	//moves for opcode critters
 	'false': {
 		name: 'false',
-		damage: 35,
+		damage: 45,
 		target: 'enemy'
 	},
 	'correct': {
@@ -49,6 +49,16 @@ let moves = {
 		damage: 0,
 		target: 'self'
 	},
+	'Q4': {
+		name: 'Q4?',
+		damage: 0,
+		target: 'self'
+	},
+	'Q5': {
+		name: 'Q5?',
+		damage: 0,
+		target: 'self'
+	},
 
 	'Q1A1': {
 		name: 'Satoshi',
@@ -56,17 +66,101 @@ let moves = {
 		target: 'true'
 	},
 	'Q1A2': {
-		name: 'someone2',
+		name: 's2',
 		damage: 0,
 		target: 'false'
 	},
 	'Q1A3': {
-		name: 'someone3',
+		name: 's3',
 		damage: 0,
 		target: 'false'
 	},
 	'Q1A4': {
-		name: 'someone4',
+		name: 's4',
+		damage: 0,
+		target: 'false'
+	},
+
+	'Q2A1': {
+		name: 'choose this',
+		damage: 10,
+		target: 'true'
+	},
+	'Q2A2': {
+		name: 's2',
+		damage: 0,
+		target: 'false'
+	},
+	'Q2A3': {
+		name: 's3',
+		damage: 0,
+		target: 'false'
+	},
+	'Q2A4': {
+		name: 's4',
+		damage: 0,
+		target: 'false'
+	},
+
+	'Q3A1': {
+		name: 'S1',
+		damage: 0,
+		target: 'true'
+	},
+	'Q3A2': {
+		name: 'choose this',
+		damage: 10,
+		target: 'true'
+	},
+	'Q3A3': {
+		name: 's3',
+		damage: 0,
+		target: 'false'
+	},
+	'Q3A4': {
+		name: 's4',
+		damage: 0,
+		target: 'false'
+	},
+
+	'Q4A1': {
+		name: 'choose this',
+		damage: 10,
+		target: 'true'
+	},
+	'Q4A2': {
+		name: 's2',
+		damage: 0,
+		target: 'false'
+	},
+	'Q4A3': {
+		name: 's3',
+		damage: 0,
+		target: 'false'
+	},
+	'Q4A4': {
+		name: 's4',
+		damage: 0,
+		target: 'false'
+	},
+
+	'Q5A1': {
+		name: 'S1',
+		damage: 0,
+		target: 'true'
+	},
+	'Q5A2': {
+		name: 'choose this',
+		damage: 10,
+		target: 'true'
+	},
+	'Q5A3': {
+		name: 's3',
+		damage: 0,
+		target: 'false'
+	},
+	'Q5A4': {
+		name: 's4',
 		damage: 0,
 		target: 'false'
 	},

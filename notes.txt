@@ -17,3 +17,8 @@ Next Steps
 -Wizard upgrades
 -Capture instead of defeat
 -Kill or set free captured opcode critters
+
+
+TODO
+-catch health and make faint before it drops below zero
+-add questions 6-10
