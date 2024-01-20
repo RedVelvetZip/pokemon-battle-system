@@ -54,6 +54,7 @@ function showPokemon(){
 	document.getElementById('pkmnback-hp').textContent = playerPokemon.health;
 	document.getElementById('attack1').textContent = playerPokemon.moves[0].name;
 	document.getElementById('attack2').textContent = playerPokemon.moves[1].name;
+	document.getElementById('question').textContent = playerPokemon.moves[1].name;
 
 	// This animates the health bar when attacked
 	var percentage = playerPokemon.health / playerPokemon.maxhealth;
@@ -66,25 +67,27 @@ function switchPokemon() {
 	console.log('switched pokemon');
 }
 
-function itemButton() {
+// function itemButton() {
 
-}
+// }
 
 function fightButton() {
-	document.getElementById('b2').src = "./assets/img/pkmnbattle2.png";
+	document.getElementById('b2').src = "./assets/img/pkmnbattle2.png";//TODO QQ goes over this
 	document.getElementById('attackcancel').style.zIndex = '1';
 	document.getElementById('attack1').style.zIndex = '1';
 	document.getElementById('attack2').style.zIndex = '1';
+	document.getElementById('question').style.zIndex = '1';
 }
 
-function pkmnButton() {
+// function pkmnButton() {
 
-}
+// }
 
 function cancelButton() {
 	document.getElementById('attackcancel').style.zIndex = '-1';
 	document.getElementById('attack1').style.zIndex = '-1';
 	document.getElementById('attack2').style.zIndex = '-1';
+	document.getElementById('question').style.zIndex = '-1';
 	document.getElementById('b2').src = "";
 
 }
@@ -94,6 +97,7 @@ function attack1() {
 	document.getElementById('attackcancel').style.zIndex = '-1';
 	document.getElementById('attack1').style.zIndex = '-1';
 	document.getElementById('attack2').style.zIndex = '-1';
+	document.getElementById('question').style.zIndex = '-1';
 	document.getElementById('b2').src = "";
 	if (playerPokemon.moves[0].target != 'self') {
 		document.getElementById('pkmn').style.animation = 'blink 0.15s 5';
@@ -116,6 +120,7 @@ function attack2() {
 	document.getElementById('attackcancel').style.zIndex = '-1';
 	document.getElementById('attack1').style.zIndex = '-1';
 	document.getElementById('attack2').style.zIndex = '-1';
+	document.getElementById('question').style.zIndex = '-1';
 	document.getElementById('b2').src = "";
 	if (playerPokemon.moves[1].target != 'self') {
 		document.getElementById('pkmn').style.animation = 'blink 0.15s 5';

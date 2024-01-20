@@ -300,6 +300,21 @@ button:focus {
 	text-align: left;
 }
 
+#question {
+	position: absolute;
+	font-family: 'pokemon-font', monospace;
+	font-size: 15px;
+	left: 33px;
+	top: 242px;
+	width: 241px;
+	height: 88px;
+	background: transparent;
+	border: none !important;
+	color: #282d00;
+	z-index: -1;
+	text-align: left;
+}
+
 #attackcancel {
 	position: absolute;
 	font-family: 'pokemon-font', monospace;
