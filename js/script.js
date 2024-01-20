@@ -36,9 +36,18 @@ function transition() {
 
 //Starts the game with the player as the Taproot Wizard battling against Mew/OP_CAT
 function initGame() {
-	playerParty.push(pokemon[1],pokemon[2],pokemon[3],pokemon[4],pokemon[5]);
 	enemyParty.push(pokemon[0]);
-	playerPokemon = playerParty[0];
+	playerParty.push(pokemon[1]);
+	playerParty.push(pokemon[3]);
+	// playerParty.push(pokemon[3]);
+	// playerParty.push(pokemon[4]);
+	// playerParty.push(pokemon[5]);
+	// playerParty.push(pokemon[6]);
+	// playerParty.push(pokemon[7]);
+	// playerParty.push(pokemon[8]);
+	// playerParty.push(pokemon[9]);
+	// playerParty.push(pokemon[10]);
+	playerPokemon = playerParty[1];
 	console.log(playerPokemon);
 	enemyPokemon = enemyParty[0];
 
@@ -106,6 +115,14 @@ function attack1() {
 		}, 1000);
 		questionCounter++;
 		playerPokemon.cycle(playerPokemon, playerParty);
+	}
+	else {
+		enemyPokemon.attack(playerPokemon,enemyPokemon.moves[6]);//hardcoded to 6 bc that's where 'false' is rn. need to update after final Qs added
+		playerPokemon.loser(playerPokemon, playerParty);
+		document.getElementById('pkmnback').style.animation = 'blink 0.15s 5';
+		setTimeout(function() {
+			document.getElementById('pkmnback').style.animation = '';
+		}, 1000);
 	}
 	enemyPokemon.faint(enemyPokemon, enemyParty);
 	removeListeners();
