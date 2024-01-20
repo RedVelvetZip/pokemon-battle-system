@@ -134,6 +134,7 @@ function attack2() {
 	}
 	else {
 		enemyPokemon.attack(playerPokemon,enemyPokemon.moves[6]);//hardcoded to 6 bc that's where 'false' is rn. need to update after final Qs added
+		playerPokemon.loser(playerPokemon, playerParty);
 		document.getElementById('pkmnback').style.animation = 'blink 0.15s 5';
 		setTimeout(function() {
 			document.getElementById('pkmnback').style.animation = '';
@@ -150,19 +151,19 @@ function attack2() {
 }
 
 function enemyAttack() {
-	var attackMove = Math.floor(Math.random() * enemyPokemon.moves.length);
+	// var attackMove = Math.floor(Math.random() * enemyPokemon.moves.length);
 	//Only inflict damage if the answer is wrong
 	// var attackMove = if 
 	// console.log('attacked with',enemyPokemon.moves[attackMove].name);
-	enemyPokemon.attack(playerPokemon,enemyPokemon.moves[attackMove]);
-	if (enemyPokemon.moves[attackMove].target != 'self') {
-		document.getElementById('pkmnback').style.animation = 'blink 0.15s 5';
-		setTimeout(function() {
-			document.getElementById('pkmnback').style.animation = '';
-		}, 1000);
-	}
-	showPokemon();
-	playerPokemon.loser(playerPokemon, playerParty);
+	// enemyPokemon.attack(playerPokemon,enemyPokemon.moves[attackMove]);
+	// if (enemyPokemon.moves[attackMove].target != 'self') {
+	// 	document.getElementById('pkmnback').style.animation = 'blink 0.15s 5';
+	// 	setTimeout(function() {
+	// 		document.getElementById('pkmnback').style.animation = '';
+	// 	}, 1000);
+	// }
+	// showPokemon();
+	// playerPokemon.loser(playerPokemon, playerParty);
 }
 
 function addListeners() {

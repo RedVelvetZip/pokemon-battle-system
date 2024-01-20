@@ -59,20 +59,20 @@ class Pokemon {
 		var foundPokemon = false;
 		var tempHealth = this.health;
 		// if (this.health <= 0) {
-			console.log('fainted!');
-			this.alive = false;
-			for (var i = 0; i < party.length; i++) {
-				if (party[i].alive == true) {
-					foundPokemon = true;
-					currentPokemon = party[i];
-					currentPokemon.health = tempHealth;//added
-					break;
-				}
+		console.log('fainted!');
+		this.alive = false;
+		for (var i = 0; i < party.length; i++) {
+			if (party[i].alive == true) {
+				foundPokemon = true;
+				currentPokemon = party[i];
+				currentPokemon.health = tempHealth;//added
+				break;
 			}
-			if (foundPokemon == false) {
-				endGame();
-			}
-			return currentPokemon;
+		}
+		// if (foundPokemon == false) {
+		// 	endGame();
+		// }
+		return currentPokemon;
 		// }
 	}
 
