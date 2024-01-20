@@ -55,26 +55,26 @@ class Pokemon {
 		}
 	}
 
-	cycle(currentPokemon, party) {
-		var foundPokemon = false;
-		var tempHealth = this.health;
-		// if (this.health <= 0) {
-		console.log('fainted!');
-		this.alive = false;
-		for (var i = 0; i < party.length; i++) {
-			if (party[i].alive == true) {
-				foundPokemon = true;
-				currentPokemon = party[i];
-				currentPokemon.health = tempHealth;//added
-				break;
-			}
-		}
-		// if (foundPokemon == false) {
-		// 	endGame();
-		// }
-		return currentPokemon;
-		// }
-	}
+	// cycle(currentPokemon, party) {
+	// 	var foundPokemon = false;
+	// 	var tempHealth = this.health;
+	// 	// if (this.health <= 0) {
+	// 	console.log('fainted!');
+	// 	this.alive = false;
+	// 	for (var i = 0; i < party.length; i++) {
+	// 		if (party[i].alive == true) {
+	// 			foundPokemon = true;
+	// 			currentPokemon = party[i];
+	// 			currentPokemon.health = tempHealth;//added
+	// 			break;
+	// 		}
+	// 	}
+	// 	// if (foundPokemon == false) {
+	// 	// 	endGame();
+	// 	// }
+	// 	return currentPokemon;
+	// 	// }
+	// }
 
 	loser(currentPokemon, party) {
 		// var foundPokemon = false;
@@ -101,22 +101,27 @@ class Pokemon {
 pokemon = [];
 
 // pokemon.push(new Pokemon('OP_CAT', 99, 117, [moves['correct'], moves['false'], moves['Q1']], './assets/img/mew07.png', './assets/img/mew07.png'));
-pokemon.push(new Pokemon('OP_CAT', 99, 91, [moves['Q1'], moves['Q2'], moves['Q3'], moves['Q4'], moves['Q5'], moves['correct'], moves['false']], './assets/img/mew07.png', './assets/img/mew07.png'));
+pokemon.push(new Pokemon('OP_CAT', 99, 91, [moves['correct'], moves['false'], moves['Q1'], moves['Q2'], moves['Q3'], moves['Q4'], moves['Q5'], moves['Q6'], moves['Q7'], moves['Q8'], moves['Q9'], moves['Q10'],], './assets/img/mew07.png', './assets/img/mew07.png'));
 
 // pokemon.push(new Pokemon('OP_CTV', 99, 117, [moves['correct'], moves['false']], './assets/img/templeape01.png', './assets/img/templeape01.png'));
 
-pokemon.push(new Pokemon('WIZARD1', 10, 100, [moves['Q1A1'], moves['Q1A2'], moves['Q1A3'], moves['Q1A4']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
-pokemon.push(new Pokemon('WIZARD2', 20, 100, [moves['Q2A1'], moves['Q2A2'], moves['Q2A3'], moves['Q2A4']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
+// pokemon.push(new Pokemon('WIZARD1', 10, 100, [moves['Q1A1'], moves['Q1A2'], moves['Q1A3'], moves['Q1A4']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
+// pokemon.push(new Pokemon('WIZARD2', 20, 100, [moves['Q2A1'], moves['Q2A2'], moves['Q2A3'], moves['Q2A4']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
 // pokemon.push(new Pokemon('WIZARD3', 30, 100, [moves['Q3A1'], moves['Q3A2'], moves['Q3A3'], moves['Q3A4']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
 // pokemon.push(new Pokemon('WIZARD4', 40, 100, [moves['Q4A1'], moves['Q4A2'], moves['Q4A3'], moves['Q4A4']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
 // pokemon.push(new Pokemon('WIZARD5', 50, 100, [moves['Q5A1'], moves['Q5A2'], moves['Q5A3'], moves['Q5A4']], './assets/img/wizard02.png', './assets/img/wizard02.png'));
-pokemon.push(new Pokemon('WIZARD0', 50, 100, 
+pokemon.push(new Pokemon('WIZARD', 50, 100, 
 [
 	moves['Q1A1'], moves['Q1A2'], moves['Q1A3'], moves['Q1A4'],
 	moves['Q2A1'], moves['Q2A2'], moves['Q2A3'], moves['Q2A4'],
 	moves['Q3A1'], moves['Q3A2'], moves['Q3A3'], moves['Q3A4'],
 	moves['Q4A1'], moves['Q4A2'], moves['Q4A3'], moves['Q4A4'],
 	moves['Q5A1'], moves['Q5A2'], moves['Q5A3'], moves['Q5A4'],
+	moves['Q6A1'], moves['Q6A2'], moves['Q6A3'], moves['Q6A4'],
+	moves['Q7A1'], moves['Q7A2'], moves['Q7A3'], moves['Q7A4'],
+	moves['Q8A1'], moves['Q8A2'], moves['Q8A3'], moves['Q8A4'],
+	moves['Q9A1'], moves['Q9A2'], moves['Q9A3'], moves['Q9A4'],
+	moves['Q10A1'], moves['Q10A2'], moves['Q10A3'], moves['Q10A4'],
 ], 
 './assets/img/wizard02.png', './assets/img/wizard02.png'));
 

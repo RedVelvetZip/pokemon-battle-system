@@ -38,7 +38,7 @@ function transition() {
 function initGame() {
 	enemyParty.push(pokemon[0]);
 	playerParty.push(pokemon[1]);
-	playerParty.push(pokemon[3]);
+	// playerParty.push(pokemon[2]);
 	// playerParty.push(pokemon[3]);
 	// playerParty.push(pokemon[4]);
 	// playerParty.push(pokemon[5]);
@@ -47,7 +47,7 @@ function initGame() {
 	// playerParty.push(pokemon[8]);
 	// playerParty.push(pokemon[9]);
 	// playerParty.push(pokemon[10]);
-	playerPokemon = playerParty[1];
+	playerPokemon = playerParty[0];
 	console.log(playerPokemon);
 	enemyPokemon = enemyParty[0];
 
@@ -108,16 +108,16 @@ function attack1() {
 	document.getElementById('attack2').style.zIndex = '-1';
 	document.getElementById('question').style.zIndex = '-1';
 	document.getElementById('b2').src = "";
-	if (playerPokemon.moves[0].target == 'true') {
+	if (playerPokemon.moves[(questionCounter*4)+0].target == 'true') {
 		document.getElementById('pkmn').style.animation = 'blink 0.15s 5';
 		setTimeout(function() {
 			document.getElementById('pkmn').style.animation = '';
 		}, 1000);
 		questionCounter++;
-		playerPokemon.cycle(playerPokemon, playerParty);
+		playerPokemon.faint(playerPokemon, playerParty);
 	}
 	else {
-		enemyPokemon.attack(playerPokemon,enemyPokemon.moves[6]);//hardcoded to 6 bc that's where 'false' is rn. need to update after final Qs added
+		enemyPokemon.attack(playerPokemon,enemyPokemon.moves[1]);//hardcoded to 1 bc that's where 'false' is rn
 		playerPokemon.loser(playerPokemon, playerParty);
 		document.getElementById('pkmnback').style.animation = 'blink 0.15s 5';
 		setTimeout(function() {
@@ -141,16 +141,16 @@ function attack2() {
 	document.getElementById('attack2').style.zIndex = '-1';
 	document.getElementById('question').style.zIndex = '-1';
 	document.getElementById('b2').src = "";
-	if (playerPokemon.moves[1].target == 'true') {
+	if (playerPokemon.moves[(questionCounter*4)+1].target == 'true') {
 		document.getElementById('pkmn').style.animation = 'blink 0.15s 5';
 		setTimeout(function() {
 			document.getElementById('pkmn').style.animation = '';
 		}, 1000);
 		questionCounter++;
-		playerPokemon.cycle(playerPokemon, playerParty);
+		playerPokemon.faint(playerPokemon, playerParty);
 	}
 	else {
-		enemyPokemon.attack(playerPokemon,enemyPokemon.moves[6]);//hardcoded to 6 bc that's where 'false' is rn. need to update after final Qs added
+		enemyPokemon.attack(playerPokemon,enemyPokemon.moves[1]);//hardcoded to 1 bc that's where 'false' is rn
 		playerPokemon.loser(playerPokemon, playerParty);
 		document.getElementById('pkmnback').style.animation = 'blink 0.15s 5';
 		setTimeout(function() {
