@@ -63,8 +63,8 @@ function showPokemon(){
 	document.getElementById('pkmn-name').textContent = enemyPokemon.pokename;
 	document.getElementById('pkmnback-maxhp').textContent = playerPokemon.maxhealth;
 	document.getElementById('pkmnback-hp').textContent = playerPokemon.health;
-	document.getElementById('attack1').textContent = playerPokemon.moves[0].name;
-	document.getElementById('attack2').textContent = playerPokemon.moves[1].name;
+	document.getElementById('attack1').textContent = playerPokemon.moves[(questionCounter*4)+0].name;
+	document.getElementById('attack2').textContent = playerPokemon.moves[(questionCounter*4)+1].name;
 	document.getElementById('question').textContent = enemyPokemon.moves[questionCounter].name
 
 	// This animates the health bar when attacked

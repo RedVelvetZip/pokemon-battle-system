@@ -66,7 +66,7 @@ let moves = {
 		target: 'true'
 	},
 	'Q1A2': {
-		name: 's2',
+		name: 'q1a2',
 		damage: 0,
 		target: 'false'
 	},
@@ -87,7 +87,7 @@ let moves = {
 		target: 'true'
 	},
 	'Q2A2': {
-		name: 's2',
+		name: 'q2a2',
 		damage: 0,
 		target: 'false'
 	},
@@ -103,9 +103,9 @@ let moves = {
 	},
 
 	'Q3A1': {
-		name: 'S1',
+		name: 'q3a1',
 		damage: 0,
-		target: 'true'
+		target: 'false'
 	},
 	'Q3A2': {
 		name: 'choose this',
@@ -129,7 +129,7 @@ let moves = {
 		target: 'true'
 	},
 	'Q4A2': {
-		name: 's2',
+		name: 'q4a2',
 		damage: 0,
 		target: 'false'
 	},
@@ -145,9 +145,9 @@ let moves = {
 	},
 
 	'Q5A1': {
-		name: 'S1',
+		name: 'q5a1',
 		damage: 0,
-		target: 'true'
+		target: 'false'
 	},
 	'Q5A2': {
 		name: 'choose this',
