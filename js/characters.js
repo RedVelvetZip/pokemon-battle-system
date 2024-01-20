@@ -54,6 +54,48 @@ class Pokemon {
 			return currentPokemon;
 		}
 	}
+
+	cycle(currentPokemon, party) {
+		var foundPokemon = false;
+		var tempHealth = this.health;
+		// if (this.health <= 0) {
+			console.log('fainted!');
+			this.alive = false;
+			for (var i = 0; i < party.length; i++) {
+				if (party[i].alive == true) {
+					foundPokemon = true;
+					currentPokemon = party[i];
+					currentPokemon.health = tempHealth;//added
+					break;
+				}
+			}
+			if (foundPokemon == false) {
+				endGame();
+			}
+			return currentPokemon;
+		// }
+	}
+
+	loser(currentPokemon, party) {
+		// var foundPokemon = false;
+		// var tempHealth = this.health;
+		if (this.health <= 0) {
+			// console.log('fainted!');
+			// this.alive = false;
+			// for (var i = 0; i < party.length; i++) {
+			// 	if (party[i].alive == true) {
+			// 		foundPokemon = true;
+			// 		currentPokemon = party[i];
+			// 		currentPokemon.health = tempHealth;//added
+			// 		break;
+			// 	}
+			// }
+			// if (foundPokemon == false) {
+				endGame();
+			}
+			return currentPokemon;
+		// }
+	}
 };
 
 pokemon = [];

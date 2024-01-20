@@ -105,7 +105,7 @@ function attack1() {
 			document.getElementById('pkmn').style.animation = '';
 		}, 1000);
 		questionCounter++;
-		playerPokemon.faint(playerPokemon, playerParty);
+		playerPokemon.cycle(playerPokemon, playerParty);
 	}
 	enemyPokemon.faint(enemyPokemon, enemyParty);
 	removeListeners();
@@ -130,10 +130,10 @@ function attack2() {
 			document.getElementById('pkmn').style.animation = '';
 		}, 1000);
 		questionCounter++;
-		playerPokemon.faint(playerPokemon, playerParty);
+		playerPokemon.cycle(playerPokemon, playerParty);
 	}
 	else {
-		enemyPokemon.attack(playerPokemon,enemyPokemon.moves[6]);
+		enemyPokemon.attack(playerPokemon,enemyPokemon.moves[6]);//hardcoded to 6 bc that's where 'false' is rn. need to update after final Qs added
 		document.getElementById('pkmnback').style.animation = 'blink 0.15s 5';
 		setTimeout(function() {
 			document.getElementById('pkmnback').style.animation = '';
@@ -162,7 +162,7 @@ function enemyAttack() {
 		}, 1000);
 	}
 	showPokemon();
-	playerPokemon.faint(playerPokemon, playerParty);
+	playerPokemon.loser(playerPokemon, playerParty);
 }
 
 function addListeners() {
