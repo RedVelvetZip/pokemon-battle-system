@@ -30,6 +30,10 @@ button:focus {
 	cursor: pointer;
 }
 
+.tweetbutton:hover {
+	cursor: pointer;
+}
+
 #gameboy {
 	position: absolute;
 	left: 160px;

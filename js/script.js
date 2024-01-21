@@ -216,6 +216,18 @@ function endGameWin() {
 	document.getElementById('choosedead').style.zIndex = '1';
 	document.getElementById('ending').style.zIndex = '1';
 	document.getElementById('winnertext').style.zIndex = '1';
+	document.getElementById('choosealive').addEventListener('click', function() {
+		var text = "I captured OP_CAT and decided that it should LIVE #OP_CAT_IS_ALIVE  /n/n Come play #opcodecritters and make the call";
+		var url = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(text);
+		window.open(url, '_blank');
+	});
+	document.getElementById('choosedead').addEventListener('click', function() {
+		var text = "I captured OP_CAT and decided that it should DIE #OP_CAT_IS_DEAD /n/n Come play #opcodecritters and make the call";
+		var url = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(text);
+		window.open(url, '_blank');
+	});
+	
 	battlesfx.pause();
 	victorysfx.play();
 }
+
