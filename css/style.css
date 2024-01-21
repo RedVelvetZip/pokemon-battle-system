@@ -235,14 +235,14 @@ button:focus {
 #choosealive {
 	position: absolute;
 	font-family: 'pokemon-font', monospace;
-	font-size: 14px;
+	font-size: 12px;
 	color: #282d00;
-	/* background: transparent; */
-	background: #FF00FF;
+	background: transparent;
+	/* background: #FF00FF; */
 	border: none !important;
-	width: 240px;
-	top: 52px;
-	left: 25px;
+	width: 210px;
+	top: 40px;
+	left: 32px;
 	height: 260px;
 	text-align: left;
 	z-index: -1;
@@ -255,14 +255,14 @@ button:focus {
 #choosedead {
 	position: absolute;
 	font-family: 'pokemon-font', monospace;
-	font-size: 14px;
+	font-size: 12px;
 	color: #282d00;
-	/* background: transparent; */
-	background: #3bcdb0;
+	background: transparent;
+	/* background: #3bcdb0; */
 	border: none !important;
-	width: 240px;
-	top: 52px;
-	left: 275px;
+	width: 210px;
+	top: 40px;
+	left: 289px;
 	height: 260px;
 	text-align: left;
 	z-index: -1;

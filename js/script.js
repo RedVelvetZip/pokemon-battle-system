@@ -211,9 +211,9 @@ function endGame() {
 }
 
 function endGameWin() {
-	document.getElementById('ending').src = './assets/img/pkmnvictory2.png';
-	document.getElementById('choosealive').src = './assets/img/choosealive.png';
-	document.getElementById('choosedead').src = './assets/img/choosedead.png';
+	document.getElementById('ending').src = './assets/img/pkmnvictory5.png';
+	document.getElementById('choosealive').style.zIndex = '1';
+	document.getElementById('choosedead').style.zIndex = '1';
 	document.getElementById('ending').style.zIndex = '1';
 	document.getElementById('winnertext').style.zIndex = '1';
 	battlesfx.pause();
