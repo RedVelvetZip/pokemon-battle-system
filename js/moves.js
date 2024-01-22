@@ -83,7 +83,7 @@ let moves = {
 		target: 'true'
 	},
 	'Q1A3': {
-		name: 'Programmability is arbitrary / Turing-complete',
+		name: 'Programmability is Turing-complete',
 		damage: 0,
 		target: 'false'
 	},
@@ -104,7 +104,7 @@ let moves = {
 		target: 'false'
 	},
 	'Q2A3': {
-		name: 'A command in Bitcoin Script',
+		name: 'An instruction in Bitcoin Script',
 		damage: 10,
 		target: 'true'
 	},
@@ -199,7 +199,7 @@ let moves = {
 	},
 
 	'Q7A1': {
-		name: 'Revert & re-mine all blocks since it was removed',
+		name: 'Re-mine all blocks since it was removed',
 		damage: 0,
 		target: 'false'
 	},
