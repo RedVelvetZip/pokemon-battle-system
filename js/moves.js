@@ -104,7 +104,7 @@ let moves = {
 		target: 'false'
 	},
 	'Q2A3': {
-		name: 'An instruction in Bitcoin Script',
+		name: 'A command in Bitcoin Script',
 		damage: 10,
 		target: 'true'
 	},
@@ -130,7 +130,7 @@ let moves = {
 		target: 'false'
 	},
 	'Q3A4': {
-		name: 'All A, B, and C',
+		name: 'All are true',
 		damage: 0,
 		target: 'false'
 	},
