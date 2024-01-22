@@ -312,56 +312,84 @@ button:focus {
 	color: rgba(0,0,0,0);
 }
 
-#pkmnbtn {
-	position: absolute;
-	left: 430px;
-	top: 378px;
-	width: 50px;
-	height: 28px;
-	background: transparent;
-	border: none !important;
-	color: rgba(0,0,0,0);
-}
-
-#run {
-	position: absolute;
-	left: 430px;
-	top: 432px;
-	width: 77px;
-	height: 28px;
-	background: transparent;
-	border: none !important;
-	color: rgba(0,0,0,0);
-}
-
 #attack1 {
 	position: absolute;
 	font-family: 'pokemon-font', monospace;
-	font-size: 25px;
-	left: 158px;
-	top: 342px;
-	width: 350px;
-	height: 28px;
+	font-size: 18px;
+	left: 148px;
+	top: 352px;
+	width: 170px;
+	height: 45px;
 	background: transparent;
+	/* background: #fa5387; */
 	border: none !important;
 	color: #282d00;
 	z-index: -1;
 	text-align: left;
+	display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-start; 
 }
 
 #attack2 {
 	position: absolute;
 	font-family: 'pokemon-font', monospace;
-	font-size: 25px;
-	left: 158px;
-	top: 372px;
-	width: 350px;
-	height: 28px;
+	font-size: 18px;
+	left: 148px;
+	top: 392px;
+	width: 170px;
+	height: 45px;
 	background: transparent;
+	/* background: #14af14; */
 	border: none !important;
 	color: #282d00;
 	z-index: -1;
 	text-align: left;
+	display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+}
+
+#attack3 {
+	position: absolute;
+	left: 350px;
+	top: 352px;
+	width: 170px;
+	height: 45px;
+	background: transparent;
+	/* background: #4826c3; */
+	border: none !important;
+	font-family: 'pokemon-font', monospace;
+	font-size: 18px;
+	color: #282d00;
+	z-index: -1;
+	text-align: left;
+	display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+}
+
+#attack4 {
+	position: absolute;
+	left: 350px;
+	top: 392px;
+	width: 170px;
+	height: 45px;
+	background: transparent;
+	/* background: #e4a41a; */
+	border: none !important;
+	font-family: 'pokemon-font', monospace;
+	font-size: 18px;
+	color: #282d00;
+	z-index: -1;
+	text-align: left;
+	display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-start; 
 }
 
 #question {
@@ -382,9 +410,9 @@ button:focus {
 #attackcancel {
 	position: absolute;
 	font-family: 'pokemon-font', monospace;
-	font-size: 25px;
+	font-size: 14px;
 	left: 158px;
-	top: 427px;
+	top: 437px;
 	width: 77px;
 	height: 28px;
 	background: transparent;

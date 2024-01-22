@@ -65,6 +65,8 @@ function showPokemon(){
 	document.getElementById('pkmnback-hp').textContent = playerPokemon.health;
 	document.getElementById('attack1').textContent = playerPokemon.moves[(questionCounter*4)+0].name;
 	document.getElementById('attack2').textContent = playerPokemon.moves[(questionCounter*4)+1].name;
+	document.getElementById('attack3').textContent = playerPokemon.moves[(questionCounter*4)+2].name;
+	document.getElementById('attack4').textContent = playerPokemon.moves[(questionCounter*4)+3].name;
 	document.getElementById('question').textContent = enemyPokemon.moves[questionCounter].name
 
 	// This animates the health bar when attacked
@@ -86,6 +88,8 @@ function fightButton() {
 	document.getElementById('attackcancel').style.zIndex = '1';
 	document.getElementById('attack1').style.zIndex = '1';
 	document.getElementById('attack2').style.zIndex = '1';
+	document.getElementById('attack3').style.zIndex = '1';
+	document.getElementById('attack4').style.zIndex = '1';
 	document.getElementById('question').style.zIndex = '1';
 }
 
@@ -96,6 +100,8 @@ function cancelButton() {
 	document.getElementById('attackcancel').style.zIndex = '-1';
 	document.getElementById('attack1').style.zIndex = '-1';
 	document.getElementById('attack2').style.zIndex = '-1';
+	document.getElementById('attack3').style.zIndex = '-1';
+	document.getElementById('attack4').style.zIndex = '-1';
 	document.getElementById('question').style.zIndex = '-1';
 	document.getElementById('b2').src = "";
 
@@ -106,6 +112,8 @@ function attack1() {
 	document.getElementById('attackcancel').style.zIndex = '-1';
 	document.getElementById('attack1').style.zIndex = '-1';
 	document.getElementById('attack2').style.zIndex = '-1';
+	document.getElementById('attack3').style.zIndex = '-1';
+	document.getElementById('attack4').style.zIndex = '-1';
 	document.getElementById('question').style.zIndex = '-1';
 	document.getElementById('b2').src = "";
 	if (playerPokemon.moves[(questionCounter*4)+0].target == 'true') {
@@ -140,6 +148,8 @@ function attack2() {
 	document.getElementById('attackcancel').style.zIndex = '-1';
 	document.getElementById('attack1').style.zIndex = '-1';
 	document.getElementById('attack2').style.zIndex = '-1';
+	document.getElementById('attack3').style.zIndex = '-1';
+	document.getElementById('attack4').style.zIndex = '-1';
 	document.getElementById('question').style.zIndex = '-1';
 	document.getElementById('b2').src = "";
 	if (playerPokemon.moves[(questionCounter*4)+1].target == 'true') {
@@ -169,6 +179,78 @@ function attack2() {
 	showPokemon();
 }
 
+function attack3() {
+	// playerPokemon.attack(enemyPokemon, playerPokemon.moves[0]);
+	document.getElementById('attackcancel').style.zIndex = '-1';
+	document.getElementById('attack1').style.zIndex = '-1';
+	document.getElementById('attack2').style.zIndex = '-1';
+	document.getElementById('attack3').style.zIndex = '-1';
+	document.getElementById('attack4').style.zIndex = '-1';
+	document.getElementById('question').style.zIndex = '-1';
+	document.getElementById('b2').src = "";
+	if (playerPokemon.moves[(questionCounter*4)+2].target == 'true') {
+		document.getElementById('pkmn').style.animation = 'blink 0.15s 5';
+		setTimeout(function() {
+			document.getElementById('pkmn').style.animation = '';
+		}, 1000);
+		playerPokemon.attack(enemyPokemon, playerPokemon.moves[44]);
+		questionCounter++;
+		// playerPokemon.faint(playerPokemon, playerParty);
+	}
+	else {
+		enemyPokemon.attack(playerPokemon,enemyPokemon.moves[11]);//hardcoded to 1 bc that's where 'false' is rn
+		playerPokemon.loser(playerPokemon, playerParty);
+		document.getElementById('pkmnback').style.animation = 'blink 0.15s 5';
+		setTimeout(function() {
+			document.getElementById('pkmnback').style.animation = '';
+		}, 1000);
+	}
+	enemyPokemon.faint(enemyPokemon, enemyParty);
+	removeListeners();
+	setTimeout(function() {
+		enemyAttack();
+		addListeners();
+	}, 1000);
+
+	showPokemon();
+}
+
+function attack4() {
+	// playerPokemon.attack(enemyPokemon, playerPokemon.moves[0]);
+	document.getElementById('attackcancel').style.zIndex = '-1';
+	document.getElementById('attack1').style.zIndex = '-1';
+	document.getElementById('attack2').style.zIndex = '-1';
+	document.getElementById('attack3').style.zIndex = '-1';
+	document.getElementById('attack4').style.zIndex = '-1';
+	document.getElementById('question').style.zIndex = '-1';
+	document.getElementById('b2').src = "";
+	if (playerPokemon.moves[(questionCounter*4)+3].target == 'true') {
+		document.getElementById('pkmn').style.animation = 'blink 0.15s 5';
+		setTimeout(function() {
+			document.getElementById('pkmn').style.animation = '';
+		}, 1000);
+		playerPokemon.attack(enemyPokemon, playerPokemon.moves[44]);
+		questionCounter++;
+		// playerPokemon.faint(playerPokemon, playerParty);
+	}
+	else {
+		enemyPokemon.attack(playerPokemon,enemyPokemon.moves[11]);//hardcoded to 1 bc that's where 'false' is rn
+		playerPokemon.loser(playerPokemon, playerParty);
+		document.getElementById('pkmnback').style.animation = 'blink 0.15s 5';
+		setTimeout(function() {
+			document.getElementById('pkmnback').style.animation = '';
+		}, 1000);
+	}
+	enemyPokemon.faint(enemyPokemon, enemyParty);
+	removeListeners();
+	setTimeout(function() {
+		enemyAttack();
+		addListeners();
+	}, 1000);
+
+	showPokemon();
+}
+
 function enemyAttack() {
 	// var attackMove = Math.floor(Math.random() * enemyPokemon.moves.length);
 	//Only inflict damage if the answer is wrong
@@ -191,6 +273,8 @@ function addListeners() {
 	document.getElementById('attackcancel').addEventListener('click', cancelButton);
 	document.getElementById('attack1').addEventListener('click', attack1);
 	document.getElementById('attack2').addEventListener('click', attack2);
+	document.getElementById('attack3').addEventListener('click', attack3);
+	document.getElementById('attack4').addEventListener('click', attack4);
 	// document.getElementById('items').addEventListener('click', potion);
 }
 
@@ -199,6 +283,8 @@ function removeListeners() {
 	document.getElementById('attackcancel').removeEventListener('click', cancelButton);
 	document.getElementById('attack1').removeEventListener('click', attack1);
 	document.getElementById('attack2').removeEventListener('click', attack2);
+	document.getElementById('attack3').removeEventListener('click', attack3);
+	document.getElementById('attack4').removeEventListener('click', attack4);
 	// document.getElementById('items').removeEventListener('click', potion);
 }
 
