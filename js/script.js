@@ -303,14 +303,14 @@ function endGameWin() {
 	document.getElementById('ending').style.zIndex = '1';
 	document.getElementById('winnertext').style.zIndex = '1';
 	document.getElementById('choosealive').addEventListener('click', function() {
-		var text = "I captured OP_CAT and decided that it should LIVE #OP_CAT_IS_ALIVE \n\nCome play #OpcodeCritters and make the call \n\nhttps://opcodecritters.vercel.app/";
+		var text = "I captured OP_CAT and decided that it should LIVE #OP_CAT_IS_ALIVE \n\nCome play #OpcodeCritters and make the call \n\nhttps://opcodecritters.redvelvet.tech/";
 		// var imageUrl = "https://github.com/RedVelvetZip/pokemon-battle-system/blob/master/assets/img/live.png";
 		// var url = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(text) + "&url=" + encodeURIComponent(imageUrl)
 		var url = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(text)
 		window.open(url, '_blank');
 	});
 	document.getElementById('choosedead').addEventListener('click', function() {
-		var text = "I captured OP_CAT and decided that it should DIE #OP_CAT_IS_DEAD \n\nCome play #OpcodeCritters and make the call \n\nhttps://opcodecritters.vercel.app/";
+		var text = "I captured OP_CAT and decided that it should DIE #OP_CAT_IS_DEAD \n\nCome play #OpcodeCritters and make the call \n\nhttps://opcodecritters.redvelvet.tech/";
 		// var imageUrl = "https://github.com/RedVelvetZip/pokemon-battle-system/blob/master/assets/img/die.png";
 		// var url = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(text) + "&url=" + encodeURIComponent(imageUrl)
 		var url = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(text);
