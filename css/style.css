@@ -36,15 +36,15 @@ button:focus {
 
 #gameboy {
 	position: absolute;
-	left: 160px;
-	top: -4px;
+	left: 00px;
+	top: -2px;
 }
 
 #game-window {
 	position: absolute;
 	width: 537px;
 	height: 487px;
-	left: 691px;
+	left: 231px;
 	top: 202px;
 }
 
