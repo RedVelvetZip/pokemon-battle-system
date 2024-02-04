@@ -252,8 +252,8 @@ let moves = {
 	},
 	'Q9A3': {
 		name: 'OP_CTV, OP_TXHASH, OP_CAT',
-		damage: 0,
-		target: 'false'
+		damage: 10,
+		target: 'true'
 	},
 	'Q9A4': {
 		name: 'OP_CTV, OP_CAT, OP_TXHASH',
